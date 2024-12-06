@@ -116,6 +116,10 @@ a {
   font-size: 3rem;
 }
 
+.burger i:hover {
+  color: #d54453;
+}
+
 .btn:hover,
 .header-btn:hover,
 .btn2:hover {
@@ -226,10 +230,6 @@ a {
 .star1 {
   height: 2.5rem;
 }
-
-/* .star2 {
-  height: 2rem;
-} */
 
 .btn2 {
   color: #fff;
@@ -442,7 +442,7 @@ a {
 .num1 {
   position: relative;
   flex: 1;
-  height: 40rem;
+  height: 30rem;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
@@ -450,15 +450,15 @@ a {
 }
 
 .div1 {
-  background-image: url("../images/crypt.jpg");
+  background-image: url("../images/cry4.jpeg");
 }
 
 .div2 {
-  background-image: url("../images/scams-trade.jpg");
+  background-image: url("../images/for1.webp");
 }
 
 .div3 {
-  background-image: url("../images/revolut.jpg");
+  background-image: url("../images/credit-card.png");
 }
 
 .div1:hover,
@@ -470,7 +470,7 @@ a {
 
 .overlay-here {
   position: absolute;
-  height: 40rem;
+  height: 30rem;
   width: 100%;
   background: rgba(25, 52, 81, 0.5);
 }

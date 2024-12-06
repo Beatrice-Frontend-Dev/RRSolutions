@@ -197,8 +197,9 @@
     z-index: 1100;
   }
 
-  .close-btn:hover {
-    color: #d54453; /* Highlight color on hover */
+  .close-btn:hover,
+  .burger i:hover {
+    color: #d54453;
   }
 
   .nav-icons.active {
@@ -210,6 +211,10 @@
   .burger {
     display: flex;
     font-size: 5.4rem;
+  }
+
+  .burger:hover {
+    color: #d54453;
   }
 
   .header .burger {
@@ -348,7 +353,7 @@
   .center-part {
     position: relative;
     flex-direction: column;
-    height: 128rem;
+    height: 98rem;
     row-gap: 4rem;
     margin-bottom: 4rem;
   }
