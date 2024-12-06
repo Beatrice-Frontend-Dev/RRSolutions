@@ -448,7 +448,12 @@
   }
 
   .ratings {
-    width: 70%;
+    width: 75%;
+  }
+
+  .trus {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .btn2 {
