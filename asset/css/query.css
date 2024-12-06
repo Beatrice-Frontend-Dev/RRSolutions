@@ -353,7 +353,7 @@
   .center-part {
     position: relative;
     flex-direction: column;
-    height: 98rem;
+    height: 132rem;
     row-gap: 4rem;
     margin-bottom: 4rem;
   }
