@@ -635,7 +635,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url(/asset/images/working.jpg);
+  background-image: url("../images/working.jpg");
   overflow: hidden;
 }
 
