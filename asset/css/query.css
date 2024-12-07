@@ -120,6 +120,12 @@
   }
 
   /* choose us query */
+
+  .p-choose {
+    font-size: 2.7rem;
+    padding: 3rem 4rem 0 4rem;
+  }
+
   .container {
     height: fit-content;
   }
@@ -342,6 +348,10 @@
     padding: 3.7rem 2rem;
   }
 
+  .top2 {
+    margin-top: -8rem;
+  }
+
   /* footer */
 
   .footer {
@@ -399,6 +409,10 @@
 
   .welcome {
     width: 80%;
+  }
+
+  .content h3 {
+    font-size: 3.8rem;
   }
 
   .home-about-content,
