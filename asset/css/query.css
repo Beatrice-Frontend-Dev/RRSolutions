@@ -504,6 +504,10 @@
     width: 50%;
   }
 
+  .testimonial .test-p1 {
+    width: 100%;
+  }
+
   /* accordion */
   .accordion-content {
     flex-direction: column;
@@ -619,8 +623,8 @@
   }
 
   .testimonial .test-p1 {
-    text-align: center;
-    padding: 0 10rem;
+    width: 100%;
+    line-height: 24px;
   }
 
   .quick-links {
