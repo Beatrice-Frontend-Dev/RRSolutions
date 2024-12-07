@@ -1,5 +1,6 @@
 @media (max-width: 1240px) {
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 47%;
   }
 }
@@ -30,7 +31,8 @@
     gap: 2rem;
   }
 
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 46%;
   }
 
@@ -53,7 +55,8 @@
 
   /* scam types section */
 
-  .servs {
+  .servs,
+  .box {
     width: 33.8rem;
     padding: 2rem 1.6rem;
   }
@@ -86,7 +89,8 @@
     gap: 2rem;
   }
 
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 46%;
   }
 
@@ -102,7 +106,8 @@
     column-gap: 3.5rem;
   }
 
-  .serv {
+  .serv,
+  .box {
     width: 31.8rem;
     padding: 3.7rem 1.4rem;
   }
@@ -112,6 +117,55 @@
   .servs {
     width: 33.8rem;
     padding: 2rem 1.6rem;
+  }
+
+  /* choose us query */
+  .container {
+    height: fit-content;
+  }
+
+  .boxx {
+    flex-direction: column;
+    row-gap: 3rem;
+    height: fit-content;
+  }
+
+  .root1 {
+    width: 100%;
+    height: fit-content;
+    order: 2;
+    row-gap: 3rem;
+  }
+
+  .root2 {
+    width: 100%;
+    height: fit-content;
+    order: 1;
+  }
+
+  .root3 {
+    width: 100%;
+    height: fit-content;
+    order: 3;
+    row-gap: 3rem;
+  }
+
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4 {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .boxx h1,
+  .boxx p {
+    color: #000;
+  }
+
+  .boxx p {
+    color: #000;
+    font-size: 1.8rem;
   }
 }
 
@@ -125,12 +179,14 @@
     row-gap: 2rem;
   }
 
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 45%;
   }
 
   .serv,
-  .servs {
+  .servs,
+  .box {
     width: 47%;
     padding: 3.7rem 2rem;
   }
@@ -157,7 +213,8 @@
     padding: 1.3rem 4rem;
   }
 
-  .welcome-section {
+  .welcome-section,
+  .contact-servises-content {
     padding: 5rem 4rem;
   }
 
@@ -234,6 +291,10 @@
     row-gap: 1rem;
   }
 
+  .hero-section {
+    height: 25rem;
+  }
+
   .ratings {
     padding: 1rem 0;
   }
@@ -264,7 +325,8 @@
     font-size: 2.5rem;
   }
 
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 47.5%;
   }
 
@@ -274,7 +336,8 @@
   }
 
   .serv,
-  .servs {
+  .servs,
+  .box {
     width: 47.1%;
     padding: 3.7rem 2rem;
   }
@@ -293,6 +356,35 @@
 
   .info-footer {
     width: 50%;
+  }
+
+  /* choose us section */
+
+  .container {
+    padding: 20px 0px;
+    height: fit-content;
+  }
+  .boxx {
+    flex-direction: column;
+    row-gap: 30px;
+    height: fit-content;
+  }
+  .root1 {
+    width: 100%;
+    height: fit-content;
+    order: 2;
+    row-gap: 30px;
+  }
+  .root2 {
+    width: 100%;
+    height: fit-content;
+    order: 1;
+  }
+  .root3 {
+    width: 100%;
+    height: fit-content;
+    order: 3;
+    row-gap: 30px;
   }
 }
 
@@ -331,8 +423,10 @@
     gap: 2rem;
   }
 
-  .div-box {
-    padding: 3.5rem 2rem;
+  .div-box,
+  .div-boxs,
+  .contact-servises-content {
+    padding: 4.5rem 4rem;
   }
 
   .div-box p:nth-child(1) {
@@ -340,7 +434,10 @@
     padding-bottom: 1rem;
   }
 
-  .top {
+  .top,
+  .top2,
+  .downer,
+  .contact-servises-content {
     flex-direction: column;
     gap: 4rem;
   }
@@ -370,7 +467,8 @@
   }
 
   .serv,
-  .servs {
+  .servs,
+  .box {
     width: 96%;
     padding: 3.5rem 2rem;
   }
@@ -403,7 +501,7 @@
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   html {
     font-size: 62.5%;
   }
@@ -411,6 +509,10 @@
   .top,
   .down {
     padding: 3rem 2rem;
+  }
+
+  .contact-servises-content {
+    padding: 5rem 3rem;
   }
 
   .header,
@@ -423,6 +525,10 @@
     color: #fff;
     font-size: 2.4rem;
     font-weight: 500;
+  }
+
+  .burger {
+    font-size: 5rem;
   }
 
   .welcome {
@@ -466,7 +572,8 @@
   }
 
   .serv,
-  .servs {
+  .servs,
+  .box {
     width: 100%;
     padding: 3.5rem 2rem;
   }
@@ -483,7 +590,8 @@
     flex-direction: column;
   }
 
-  .div-box {
+  .div-box,
+  .div-boxs {
     width: 100%;
   }
 
@@ -498,7 +606,7 @@
 
   .testimonial .test-p1 {
     text-align: center;
-    padding: 0 7rem 0 5rem;
+    padding: 0 10rem;
   }
 
   .quick-links {
@@ -506,7 +614,7 @@
   }
 
   .footer {
-    padding: 10rem 2.3rem;
+    padding: 10rem 3rem;
   }
 
   .footer-content {
@@ -528,3 +636,5 @@
     font-size: 1.6rem;
   }
 }
+
+/* choose us section */

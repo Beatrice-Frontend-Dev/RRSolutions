@@ -22,12 +22,14 @@
     <link rel="stylesheet" href="../asset/css/style.css" />
     <link rel="stylesheet" href="../asset/css/pages.css" />
     <link rel="stylesheet" href="../asset/css/query.css" />
-    <title>About</title>
+    <title>Services</title>
   </head>
   <body>
     <div class="header">
-      <img src="../asset/images/rrs.png" class="logoimg" alt="" />
-      <ol class="nav-icons" id="nav-menu">
+      <img src="../asset/images/rrs3.png" class="logoimg" alt="" />
+      <ol class="nav-icons" id="nav-icons">
+        <button class="close-btn" onclick="closeNav()">✕</button>
+
         <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="services.html" class="active-page">Our services</a></li>
@@ -36,13 +38,25 @@
       <button class="header-btn">
         <a href="contact.html">Recover funds</a>
       </button>
-      <div class="burger">&#9776;</div>
+      <div class="burger" id="burger" onclick="toggleNav()">
+        <i class="ri-menu-fold-fill"></i>
+      </div>
     </div>
 
-    <section class="hero-section">
-      <div class="section hero-content">
-        <div class="content">
-          <h3>Our Services</h3>
+    <section
+      class="hero-section"
+      style="
+        background-image: url(../asset/images/hero-slide5.jpg);
+        background-size: cover;
+        background-position: bottom left;
+        height: 50rem;
+      "
+    >
+      <div class="overlay-about">
+        <div class="section hero-content">
+          <div class="content">
+            <h3>Services We Offer</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -50,216 +64,329 @@
     <section class="section services">
       <div class="services-content">
         <div class="top2">
-          <div class="top-left">
-            <p>Our Services</p>
-            <h3>Explore our finance recovery services</h3>
-            <div class="top-right">
-              If you have suffered losses online or whilst trading or investing,
-              then our range of finance recovery services can help you to
-              recover any lost funds and monies. Contact Reclaim Pro today and
-              our team of specialist solicitors are available to help and are on
-              hand to advise which of our finance recovery services would be
-              best suited to your case.
-            </div>
-            <button class="hero-btn">
-              <a href="contact.html">Reach Out</a>
-            </button>
+          <div class="left-serv">
+            <p class="box-icon"><i class="ri-secure-payment-line"></i></p>
+            <h4>Credit Card Scams: Protecting Your Finances from Fraudsters</h4>
+            <p class="box-p22">
+              Credit card scams are one of the most common forms of financial
+              fraud, affecting millions of people worldwide. Scammers use
+              various deceptive tactics to steal credit card information, often
+              leading to unauthorized transactions, identity theft, and
+              financial distress for victims.
+            </p>
+
+            <p class="box-p22">
+              If you've been a victim of a credit card scam, our fraud recovery
+              experts will guide you through every step of the recovery process,
+              ensuring your financial security is restored and protected against
+              future threats.
+            </p>
           </div>
 
-          <div class="right-part2">
-            <img src="../asset/images/lawyer.jpg" alt="" />
+          <div class="second-serv">
+            <p class="box-icon"><i class="ri-btc-line"></i></p>
+            <h4>Trading Scams: Safeguarding Your Assets from Fraudsters</h4>
+            <p class="box-p22">
+              Trading scams are increasingly common in today's digital financial
+              world, especially in areas like cryptocurrency, forex, and other
+              investment markets. These scams exploit the promise of high
+              returns and often target inexperienced investors, leaving victims
+              with significant financial losses. If you've been victimized by a
+              trading scam, don't suffer in silence. Our team is dedicated to
+              helping you reclaim your investments and secure your financial
+              future. With expert guidance and comprehensive support, we'll
+              stand by you every step of the way.
+            </p>
+          </div>
+
+          <div class="right-serv">
+            <p class="box-icon"><i class="ri-shield-star-line"></i></p>
+            <h4>
+              Investigating Fraud and Infidelity: Protecting Your Business and
+              Personal Life
+            </h4>
+            <p class="box-p22">
+              Trust is vital in both business and personal relationships, but
+              suspicions of fraud or infidelity can create uncertainty and
+              distress. In the business world, fraudulent partners can undermine
+              your enterprise through actions such as embezzlement,
+              misrepresentation, or tampering with company records. On a
+              personal level, signs of infidelity could include emotional
+              withdrawal, secretive behavior, or unexplained expenses. Our
+              investigative services provide a comprehensive approach to
+              uncovering the truth in both scenarios.
+            </p>
           </div>
         </div>
 
         <div class="downer">
           <div class="servs serv1" id="trading-scams">
-            <p>Our Services</p>
-            <p>Trading Scams</p>
-            <img src="../assets/images/trading.webp" alt="" />
+            <p>Credit Score Repair</p>
+            <img src="../asset/images/Score.jpg" alt="" />
             <p>
-              At Reclaim Pro, we specialise in dealing with a wide variety of
-              different online trading scams and can help you to recover money
-              and funds lost through these trades. Whether you've lost money
-              through a CFD Scam, or made trades through Forex that resulted in
-              financial loss as the result of an online trading scam, our team
-              can work to trace this trade and look to recover the lost funds.
+              At Rapid Recovery Solutions, we understand how a poor credit score
+              can limit your financial opportunities, from securing loans to
+              purchasing a home or even qualifying for a job. Whether caused by
+              errors, fraud, or financial challenges, a damaged credit score can
+              feel overwhelming. That's why we offer professional credit score
+              repair services to help you regain control and rebuild your
+              financial future. <br />Let Rapid Recovery Solutions be your
+              trusted partner in reclaiming your financial health. With our
+              expertise and support, you can achieve a stronger credit profile
+              and the confidence to pursue your financial goals.
             </p>
           </div>
 
           <div class="servs serv2" id="crypto-scams">
-            <p>Our Services</p>
-            <p>Cryptocurrency Trading Losses</p>
-            <img src="../assets/images/btc.jpg" alt="" />
+            <p>Recovering Lost Cryptocurrency</p>
+            <img src="../asset/images/lost-crypto.jpg" alt="" />
             <p>
-              Hundreds of thousands of people currently trade using digital
-              currencies. As the technology and processes used to trade crypto
-              are complicated and complex, unfortunately, this means a lot of
-              traders fall victim to a crypto scam. If you believe you may have
-              been the victim of a crypto scam, contact us today to find out
-              more about our crypto finance recovery services.
-            </p>
-          </div>
-
-          <div class="servs serv3" id="forex-scams">
-            <p>Our Services</p>
-            <p>Forex Scams</p>
-            <img src="../assets/images/forex.jpg" alt="" />
-            <p>
-              When it comes to Forex trading, scams can happen at any time. Many
-              of these attacks can be very specific and incredibly
-              sophisticated, meaning that only the most observant of eyes are
-              capable of spotting the dangers. We're seeing more and more cases
-              for Forex scams, however, we can help recover funds lost through
-              scams and fraud.
+              Cryptocurrency trading can be highly lucrative, but its volatility
+              and lack of regulation also make it a prime target for scams and
+              fraudulent schemes. Many individuals experience devastating losses
+              due to fraudulent platforms, phishing attacks, or poorly secured
+              wallets. At Rapid Recovery Solutions, we specialize in helping
+              victims of cryptocurrency trading losses regain control of their
+              finances by leveraging our expertise in blockchain technology and
+              financial recovery. <br />
+              With our proven methods and personalized approach, we strive to
+              maximize the chances of recovering your assets while helping you
+              rebuild confidence in cryptocurrency trading. Trust us to be your
+              ally in navigating the complexities of the crypto world.
             </p>
           </div>
 
           <div class="servs serv4" id="internet-scam">
-            <p>Our Services</p>
-            <p>Internet and Online Scams</p>
-            <img src="../assets/images/internet.jpg" alt="" />
+            <p>Investigating Cheating Partners</p>
+            <img src="../asset/images/unfaithful.jpg" alt="" />
             <p>
-              Internet scams pose an ever-present threat to everyone that goes
-              online. With the internet playing such a huge role in our lives,
-              it's easy to forget that not everyone you come into contact with
-              online has your best interests at heart. Internet and online scams
-              are becoming increasingly more common and complex and there are
-              now many different forms of online scams, all designed to trick
-              unsuspecting victims and scam them out of their money.
+              Suspecting a cheating partner can be emotionally distressing, and
+              when trust is broken, finding the truth becomes crucial for making
+              informed decisions. One of the most common ways to uncover
+              infidelity is by reviewing phone activity, as it can reveal texts,
+              call logs, emails, and social media interactions that might
+              indicate a partner's disloyalty. At Rapid Recovery Solutions, we
+              offer discreet and professional services to help individuals gain
+              access to phone records and data to confirm or dispel their
+              suspicions. <br />
+              Using advanced investigative techniques, our team can assist in
+              retrieving deleted messages, photos, and app data that may have
+              been hidden or erased. We provide a thorough and confidential
+              analysis of phone activity, including text conversations, call
+              histories, location data, and social media accounts.
             </p>
           </div>
 
-          <div class="servs serv5" id="tracing-services">
-            <p>Our Services</p>
-            <p>Tracing Services</p>
-            <img src="../assets/images/tracking.jpg" alt="" />
+          <div class="servs serv3" id="forex-scams">
+            <p>Recovering Losses from Forex</p>
+            <img src="../asset/images/lost-forex.jpeg" alt="" />
             <p>
-              Over the last few years, more and more people have made personal
-              investments, looking to protect themselves and their future.
-              Whilst there are many benefits to these investments, there also
-              comes some risk. With this rise in investments, there has also
-              been a rise in investment scams, particularly in cryptocurrency
-              and digital investments. As part of our finance recovery services,
-              we can trace the history of your investments and look to recover
-              your lost money. Find out more here.
+              The forex market, known for its potential high returns, has
+              unfortunately become a hotspot for scams targeting unsuspecting
+              traders. Fraudulent brokers, fake investment schemes, and
+              deceptive trading platforms often lure victims with promises of
+              guaranteed profits and minimal risk. At Rapid Recovery Solutions,
+              we specialize in helping victims of forex scams recover their
+              losses and regain financial stability. <br />With our dedicated
+              team by your side, you don't have to face the aftermath of a forex
+              scam alone. Rapid Recovery Solutions is here to empower you with
+              the tools and support needed to reclaim your assets and confidence
+              in trading. Let us help you turn a challenging situation into a
+              step toward financial resilience.
+            </p>
+          </div>
+
+          <div class="servs serv3" id="forex-scams">
+            <p>Investigating Business Partners</p>
+            <img src="../asset/images/buss-partner.webp" alt="" />
+            <p>
+              Trust is essential in any business partnership, but when you
+              suspect fraud, it can threaten the very foundation of your
+              enterprise. Fraudulent activities by a business partner, such as
+              embezzlement, misrepresentation, or asset misappropriation, can
+              lead to significant financial losses and reputational damage. At
+              Rapid Recovery Solutions, we specialize in thoroughly
+              investigating suspicious business partners to uncover fraudulent
+              practices and protect your interests. <br />Our team conducts
+              comprehensive background checks, financial audits, and digital
+              forensics to identify any irregularities, hidden assets, or
+              fraudulent transactions. We also analyze business records and
+              communications to detect any signs of dishonesty or fraudulent
+              intentions.
+            </p>
+          </div>
+
+          <div class="servs serv4" id="internet-scam">
+            <p>Internet and Online Scams</p>
+            <img src="../asset/images/internet-fraud.avif" alt="" />
+            <p>
+              The internet has become an essential tool for communication,
+              shopping, and investment, but it also provides ample opportunity
+              for scammers to exploit unsuspecting individuals. Internet and
+              online scams can take many forms, from phishing attacks and fake
+              e-commerce sites to investment fraud and identity theft. At Rapid
+              Recovery Solutions, we specialize in helping victims of online
+              scams recover their lost funds and protect their personal
+              information from further harm. <br />At Rapid Recovery Solutions,
+              we are committed to helping you reclaim your financial stability
+              and peace of mind. With our expertise and support, we guide you
+              through the process of recovering from online scams and offer
+              strategies to safeguard your digital life going forward.
             </p>
           </div>
 
           <div class="servs serv6" id="broker">
-            <p>Our Services</p>
             <p>Regulated Broker Recovery</p>
-            <img src="../assets/images/recovery.jpg" alt="" />
+            <img src="../asset/images/brooker.jpg" alt="" />
             <p>
-              Reclaim Pro are leading the way with our finance recovery services
-              when it comes to money lost through regulated brokers. No matter
-              if you have traded with brokers overseas, our regulated broker
-              recovery services can help you to recover money you may have lost
-              when making trades and investments. You can find
+              Dealing with a regulated broker who has failed to honor their
+              obligations or has engaged in fraudulent activities can be a
+              daunting and stressful experience. At Rapid Recovery Solutions, we
+              specialize in helping individuals recover their investments from
+              regulated brokers who have violated their trust. Whether you've
+              encountered issues like unexecuted trades, withdrawal delays,
+              misrepresentation, or unauthorized transactions, our expert team
+              is dedicated to helping you navigate the process of recovering
+              your funds. <br />We work closely with financial regulators, such
+              as the FCA, SEC, or CFTC, to hold brokers accountable for their
+              actions. Our team uses thorough investigative methods to track
+              your funds, report the broker's actions, and pursue legal avenues
+              for recovery.
             </p>
           </div>
 
           <div class="servs serv7" id="landlord">
-            <p>Our Services</p>
             <p>Landlord Services</p>
-            <img src="../assets/images/landlord.jpeg" alt="" />
+            <img src="../asset/images/rent.webp" alt="" />
             <p>
-              Our team of landlord specialists can help advise you in terms of
-              property management remit and debt recovery. We have a range of
-              finance recovery solicitors tailored toward landlords and we
-              provide first-class legal and support services to our clients in
-              this sector.
+              As a landlord, managing properties and dealing with tenants can
+              come with a range of challenges, from late payments and property
+              damage to potential legal disputes. At Rapid Recovery Solutions,
+              we offer comprehensive services designed to protect your
+              investments, ensure you are compliant with legal requirements, and
+              resolve any issues with tenants efficiently and effectively.
+              <br />
+              Our team provides a range of landlord support services, including
+              tenant screening, lease enforcement, and debt recovery. If you are
+              facing issues with non-payment, property damage, or eviction, we
+              can help by investigating the situation, gathering evidence, and
+              assisting in legal action when necessary. Additionally, we offer
+              advice on securing your property from fraud, ensuring rental
+              agreements are solid, and navigating local landlord-tenant laws.
             </p>
           </div>
 
           <div class="servs serv8" id="rent-arrears">
-            <p>Our Services</p>
             <p>Residential Rent Arrears</p>
-            <img src="../assets/images/arrears.webp" alt="" />
+            <img src="../asset/images/areears.png" alt="" />
             <p>
-              Rent arrears can be claimed at the same time as an order for
-              possession under a standard possession procedure, but not under an
-              accelerated possession procedure. Our finance recovery services
-              can help landlords with residential rent arrears and our team can
-              assist you with the best route to take for your case.
+              Dealing with tenants who fall behind on rent can be one of the
+              most stressful aspects of property management. Rent arrears not
+              only disrupt your cash flow but can also lead to significant
+              financial strain and potential legal issues. At Rapid Recovery
+              Solutions, we offer specialized services to help landlords recover
+              unpaid rent and resolve tenant disputes related to arrears
+              efficiently and legally. <br />
+
+              Our team begins by reviewing the rental agreement and assessing
+              the situation to determine the best course of action. We assist in
+              tracking down tenants who have failed to pay, negotiating
+              repayment plans, and, if necessary, taking legal action to recover
+              the funds.
             </p>
           </div>
 
           <div class="servs serv9" id="evictions">
-            <p>Our Services</p>
-            <p>Evictions</p>
-            <img src="../assets/images/evictn.webp" alt="" />
+            <p>Eviction Services</p>
+            <img src="../asset/images/evictee.jpg" alt="" />
             <p>
-              There are many reasons why, as a private landlord, you may need
-              your property back, whether it is due to outstanding rent or
-              nuisance tenants. Tenants have a right of occupation and, as such,
-              you will need an experienced lawyer on your side to help recover
-              your property. Evictions come under our finance recovery services
-              as well.
-            </p>
-          </div>
-
-          <div class="servs serv10" id="revolt">
-            <p>Our Services</p>
-            <p>Revolut Scam Refunds</p>
-            <img src="../assets/images/revolut.jpg" alt="" />
-            <p>
-              We have worked with clients who have lost money through Revolut
-              scams and have been successful in achieving Revolut scam refunds
-              through different methods, where they were otherwise refused and
-              where cryptocurrency may be involved.
+              Evicting a tenant is a complex and often emotional process that
+              requires careful handling to ensure compliance with local laws and
+              regulations. At Rapid Recovery Solutions, we provide professional
+              eviction services to help landlords navigate the legalities,
+              minimize conflicts, and secure the swift removal of tenants who
+              are in violation of their rental agreements. Whether due to
+              non-payment of rent, property damage, or other breaches, we are
+              here to guide you through each step of the eviction process.
+              <br />Our team helps you understand the legal requirements in your
+              jurisdiction, ensuring that all notices are served properly and in
+              compliance with local landlord-tenant laws. We assist with
+              documentation, including eviction notices and court filings, and
+              represent your interests in legal proceedings if necessary.
             </p>
           </div>
 
           <div class="servs serv12" id="nft-scams">
-            <p>Our Services</p>
-            <p>NFT Scams & Investment</p>
-            <img src="../assets/images/nft.jpg" alt="" />
+            <p>Recovering NFT Scams</p>
+            <img src="../asset/images/nft.jpg" alt="" />
             <p>
-              At Reclaim Pro, our team of legal experts are on hand to help if
-              you believe you may have been the victim of an NFT scam, or have
-              lost NFT investments through regulated brokers. More consumers
-              than ever are opting for NFT investments and opportunities, but it
-              can be difficult to be sure which are the more untrustworthy
-              projects. If you've fallen victim to an NFT scam, don't lose hope.
-              Services like Reclaim Pro specialize in recovering lost funds and
-              assisting victims of online fraud.
+              The rise of Non-Fungible Tokens (NFTs) has opened up new avenues
+              for investment, but unfortunately, it has also attracted scammers
+              exploiting the hype. From fraudulent NFT marketplaces to
+              misleading projects and fake assets, many investors have lost
+              significant amounts of money in these scams. At Rapid Recovery
+              Solutions, we specialize in helping victims of NFT scams recover
+              their investments and navigate the complexities of digital asset
+              protection. <br />
+              Our team utilizes advanced blockchain forensics to trace stolen
+              NFTs and funds, identify scammers, and work with authorities and
+              platforms to pursue recovery. We also provide guidance on how to
+              safeguard your digital investments in the future, such as
+              verifying the legitimacy of NFT projects, securing digital
+              wallets, and using trusted marketplaces.
             </p>
           </div>
 
           <div class="servs serv13" id="hyperverse-scam">
-            <p>Our Services</p>
-            <p>HyperVerse Scam</p>
-            <img src="../assets/images/hyper.jpeg" alt="" />
+            <p>Recovering HyperVerse Scam</p>
+            <img src="../asset/images/hyper.webp" alt="" />
             <p>
-              With hundreds of millions of pounds lost through the HyperVerse
-              scam, its understandable that investors want to recover their lost
-              funds, and that is where we can help. Our team of award-winning
-              lawyers are on hand to help victims of online trading and
-              investment scams, such as HyperVerse.
+              The HyperVerse scam, which promised high returns through a
+              network-based investment model, has left many investors with
+              significant financial losses. This type of fraudulent scheme often
+              involves misleading claims of financial success, false promises of
+              returns, and complex referral systems that ultimately lead to the
+              collapse of the investment platform. If you've fallen victim to
+              the HyperVerse scam, Rapid Recovery Solutions is here to help you
+              navigate the recovery process and regain your lost funds. <br />
+              Our team of experts uses advanced digital forensics and
+              investigation techniques to trace transactions, identify
+              fraudulent activities, and recover your investments. We work
+              closely with law enforcement agencies and financial regulators to
+              ensure that scammers are held accountable.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section contact">
-      <div class="write-up">
-        <p>Victim of a Scam?</p>
-        <p>Get in touch</p>
-        <p>
-          We understand that being the victim of a scam can be tough to handle,
-          but we hope that our support, action and guidance can enable you to
-          recover lost funds and regain a sense of confidence and security in
-          making trades and investments online.
-        </p>
+    <section class="contact-services-page">
+      <div class="services-content-page-overlay">
+        <p class="p111">Contact Us</p>
+        <div class="contact-servises-content">
+          <div class="write-up-contact">
+            <p class="p222">
+              At Rapid Recovery Solutions, we are committed to helping you
+              recover from financial setbacks and navigate challenging
+              situations with confidence. Whether you're dealing with a scam,
+              financial fraud, or any other issue, our team of experts is here
+              to guide you every step of the way. <br />
+              Please feel free to reach out to us with any questions or
+              concerns. We offer personalized consultations to better understand
+              your needs and provide the best solutions. <br />Our team is ready
+              to assist you with your recovery needs. We look forward to hearing
+              from you and helping you regain control of your financial future.
+            </p>
 
-        <button class="hero-btn">
-          <a href="contact.html">Get in Touch</a>
-        </button>
-      </div>
+            <button class="btn services-btn">
+              <a href="contact.html">Connect us</a>
+            </button>
+          </div>
 
-      <div class="image-rep">
-        <img src="../assets/images/contact-us-1.jpg" alt="" />
+          <div class="image-rep">
+            <img src="../asset/images/call-center.webp" alt="" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -269,75 +396,82 @@
         <div class="overlay2">
           <div class="testimonial">
             <p class="test-p1">
-              "I was devastated when my rare NFT collection was stolen in a
-              phishing attack. Rapid Recovery Solution's team worked tirelessly
-              to track down the culprits and recover my digital assets. Their
-              dedication and professionalism were truly exceptional."
+              "Rapid Recovery Solutions helped me recover funds I lost in a
+              Forex scam that I had been dealing with for months. Their
+              professionalism and in-depth understanding of the situation made
+              the entire process smooth. Thanks to their team, I not only got my
+              money back but also learned valuable lessons on how to avoid
+              future scams. Highly recommend"
             </p>
-            <p class="clients-name">- Jimmy Sun</p>
+            <p class="clients-name">— Sarah M., Investor</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "I lost a significant amount of money with a regulated broker who
-              suddenly disappeared. Rapid Recovery Solutions diligently pursued
-              the case, working with regulatory authorities to recover my funds.
-              Their expertise and persistence were invaluable."
+              "I had no idea where to turn after I was scammed in a
+              cryptocurrency investment. Rapid Recovery Solutions was a
+              lifesaver. They helped me track down the fraudsters and recover a
+              significant portion of my investment. Their communication
+              throughout the process was outstanding, and I felt supported every
+              step of the way."
             </p>
-            <p class="clients-name">- MiCheal Lawrence</p>
+            <p class="clients-name">— Joel M., Crypto Investor</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "I needed to trace a complex financial transaction. Rapid Recovery
-              Solutions investigative team was incredibly thorough and
-              efficient. They were able to uncover crucial information that
-              helped me recover my losses."
+              "As a landlord, I was dealing with a tenant who hadn't paid rent
+              for months. Rapid Recovery Solutions helped me quickly navigate
+              the legal complexities of eviction and secure the repayment. Their
+              team made a stressful situation manageable, and I am incredibly
+              grateful for their expertise and swift action."
             </p>
-            <p class="clients-name">- Sarah Doe</p>
+            <p class="clients-name">— Emily T., Property Owner</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "I was scammed by a fraudulent trading platform. Rapid Recovery
-              Solutions experts were able to identify the scam and recover a
-              portion of my lost funds. Their knowledge of the trading industry
-              was impressive."
+              "When I found out that my partner had been cheating, I was
+              devastated. Rapid Recovery Solutions discreetly helped me access
+              crucial phone records and online activity, providing the clarity I
+              needed. Their support was invaluable during such a challenging
+              time, and I can't thank them enough for their confidentiality and
+              thoroughness."
             </p>
-            <p class="clients-name">- JKammy Anna</p>
+            <p class="clients-name">— Rachel P., Client</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "As a business owner, I rely heavily on technology. When our
-              company was targeted by a cyberattack, we turned to Rapid Recovery
-              Solutions for help. They quickly identified the threat and
-              implemented effective security measures to protect our sensitive
-              data. We're grateful for their expertise and professionalism."
+              "I was scammed in an NFT investment that promised high returns but
+              turned out to be a complete fraud. I thought all hope was lost
+              until I reached out to Rapid Recovery Solutions. Their team was
+              able to trace the stolen assets and helped me recover a portion of
+              my investment. I'm thankful for their dedication and expertise."
             </p>
-            <p class="clients-name">- Juddy Moe</p>
+            <p class="clients-name">— Lauren F., Digital Investor</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "Losing my investment felt like losing a piece of myself. I was
-              skeptical at first, but Rapid Recovery Solutions proved to be my
-              saving grace. Their support and constant updates eased my anxiety.
-              They fought for me like it was their own money on the line. Now, I
-              can start rebuilding, all thanks to them."
+              "After suspecting that my business partner was embezzling funds, I
+              reached out to Rapid Recovery Solutions for help. Their
+              investigative services uncovered critical evidence, and I was able
+              to take legal action and recover what was rightfully mine. Their
+              professionalism and attention to detail are second to none."
             </p>
-            <p class="clients-name">- Janny Robert</p>
+            <p class="clients-name">— David L., Business Owner</p>
           </div>
 
           <div class="testimonial">
             <p class="test-p1">
-              "I thought my prized NFT collection was gone forever after a
-              phishing attack. Thanks to Rapid Recovery Solutions, I was able to
-              recover my stolen assets. Your team's quick response and efficient
-              recovery process were impressive. I'm so relieved and thankful for
-              their help."
+              "I was a victim of a credit card scam, where unauthorized charges
+              were made to my account. Rapid Recovery Solutions helped me
+              dispute the charges and recover my money. Their team worked with
+              my bank and credit card company, handling everything quickly and
+              efficiently. I'm so grateful for their help"
             </p>
-            <p class="clients-name">- Sophia Kass</p>
+            <p class="clients-name">— Mark T., Credit Card Holder</p>
           </div>
         </div>
       </div>
@@ -355,12 +489,18 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-talk">
-          <img src="../asset/images/rrs.png" class="footer-logo" alt="" />
+          <img src="../asset/images/rrs3.png" class="footer-logo" alt="" />
           <p class="footer-about">
             Rapid Recovery Solutions is proud to be spearheading the legal fight
             against unregulated fradulent , Forex , Cryptocurrencies, and other
             trading or internet scams.
           </p>
+
+          <img
+            src="../asset/images/foot-rating.jpg"
+            class="foot-rating"
+            alt=""
+          />
         </div>
 
         <div class="info-footer quick-links">
@@ -368,10 +508,14 @@
           <ol>
             <li><a href="../index.html">Home</a></li>
             <li>
-              <a href="services.html" class="active-page">Services</a>
+              <a href="/#" class="active-page">Services</a>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recover Funds</a></li>
+            <li><a href="#">Forex Scams</a></li>
+            <li><a href="#">Cryptocurrency Scams</a></li>
+            <li><a href="#">NFT Scams & Investment</a></li>
+            <li><a href="#">Trading Scams</a></li>
           </ol>
         </div>
 
@@ -380,7 +524,9 @@
 
           <p class="add">
             <i class="ri-mail-line"></i>
-            <a href="mailto:support@reclaimpro.org">support@reclaimpro.org</a>
+            <a href="mailto:support@rapidrecoverysolutions.org"
+              >support@rapidrecoverysolutions.org</a
+            >
           </p>
         </div>
       </div>
